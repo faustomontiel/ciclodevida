@@ -1,9 +1,10 @@
-
+<form   class="form">
         <h2>Login</h2>
-        <p type="Email:"><input placeholder="Email" type="text" [(ngModel)]="usuario.email"></p>
-        <p type="password:"><input placeholder="Password" type="password" [(ngModel)]="usuario.pass"></p>
+        <p type="Email:"><input placeholder="Email" type="text" [(ngModel)]="usuario.email" name="email"></p>
+        <p type="password:"><input placeholder="Password" type="password" [(ngModel)]="usuario.pass" name="password"></p>
         <button (click)="Ingresar()">Ingresar</button>
         <div>
           <span class="fa fa-phone"></span>Soporte:
           <span class="fa fa-envelope-o"></span> faustomontiel98@gmail.com
         </div>
+</form>        

@@ -7,8 +7,5 @@ import { Usuario } from './clases/usuario';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Nueva app';
-  name: string;
- 
  
 }
