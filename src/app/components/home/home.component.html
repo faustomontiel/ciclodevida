@@ -1,4 +1,13 @@
 <div align="center">
     <p >Bienvenido al Home!</p>
+    <h1 *ngIf="expression">Admin!</h1>
+    <!--<h1 [hidden]="expression">Admin! sdasd</h1>-->
+    <p *ngFor="let item of lista">{{item.name}}</p>
+    <!--<div *ngFor="let item of lista">
+        <span>Nombre: </span> {{item.name}}
+        <span>Nombre: </span> {{item.perfil}}
+    </div>-->
+
+    <button (click)="irAadmin()">Administracion</button>
 </div>
     

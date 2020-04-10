@@ -8,6 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
+import { AdminComponent } from './pages/input/admin/admin.component';
+import { DetalleAlumnoComponent } from './pages/input/detalle-alumno/detalle-alumno.component';
+import { FormAlumnoComponent } from './pages/input/form-alumno/form-alumno.component';
+import { TablaAlumnoComponent } from './pages/input/tabla-alumno/tabla-alumno.component';
  
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { HomeComponent } from './components/home/home.component';
     BienvenidaComponent,
     LoginComponent,
     ErrorComponent,
-    HomeComponent
+    HomeComponent,
+    AdminComponent,
+    DetalleAlumnoComponent,
+    FormAlumnoComponent,
+    TablaAlumnoComponent
   ],
   imports: [
     BrowserModule,
