@@ -1,20 +1,14 @@
 import { Component, OnInit , Input, Output, EventEmitter} from '@angular/core';
-import { Alumno } from '../../../clases/alumno';
+import { Alumno } from '../../../../clases/alumno';
 @Component({
-  selector: 'app-tabla-alumno',
-  templateUrl: './tabla-alumno.component.html',
-  styleUrls: ['./tabla-alumno.component.css']
+  selector: 'app-listado-alumno',
+  templateUrl: './listado-alumno.component.html',
+  styleUrls: ['./listado-alumno.component.css']
 })
-export class TablaAlumnoComponent implements OnInit {
+export class ListadoAlumnoComponent implements OnInit {
   @Input() listadoAlumnos: Alumno[] ;
   @Output() alumnoSeleccionado: EventEmitter<any> = new EventEmitter<any>();
-  constructor() {
-    /*
-  this.listadoAlumnos = [
-    { apellido: 'Aguas' ,nombre:"rogelio",legajo: 999 },
-    { apellido: 'Mercurio' ,nombre:"Alfredo",legajo: 999 }
-  ];*/
-   }
+  constructor() { }
 
   ngOnInit() {
   }
@@ -23,4 +17,5 @@ export class TablaAlumnoComponent implements OnInit {
     console.info( ' mostrar detalles ', unAlumno);
     this.alumnoSeleccionado.emit(unAlumno);
   }
+
 }

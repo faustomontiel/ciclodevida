@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
+import { Alumno } from '../../../clases/alumno';
 
 @Component({
   selector: 'app-detalle-alumno',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalle-alumno.component.css']
 })
 export class DetalleAlumnoComponent implements OnInit {
+  @Input() alumnoParaMostrar: Alumno ;
+  fotoActual: string;
+  anchoDeFoto: string;
+  constructor() {
+    this.fotoActual = '/assets/imagenes/presentacion.jpg';
+    this.anchoDeFoto = '100%';
+   }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+  }
+  LipiarDetalle()
+  {
+    this.alumnoParaMostrar = null;
+    // tslint:disable-next-line: no-console
+    console.info('objeto', this.alumnoParaMostrar);
   }
 
 }

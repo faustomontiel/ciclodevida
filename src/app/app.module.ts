@@ -12,6 +12,7 @@ import { AdminComponent } from './pages/input/admin/admin.component';
 import { DetalleAlumnoComponent } from './pages/input/detalle-alumno/detalle-alumno.component';
 import { FormAlumnoComponent } from './pages/input/form-alumno/form-alumno.component';
 import { TablaAlumnoComponent } from './pages/input/tabla-alumno/tabla-alumno.component';
+import { ListadoAlumnoComponent } from './pages/input/alumno/listado-alumno/listado-alumno.component';
  
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TablaAlumnoComponent } from './pages/input/tabla-alumno/tabla-alumno.co
     AdminComponent,
     DetalleAlumnoComponent,
     FormAlumnoComponent,
-    TablaAlumnoComponent
+    TablaAlumnoComponent,
+    ListadoAlumnoComponent
   ],
   imports: [
     BrowserModule,
